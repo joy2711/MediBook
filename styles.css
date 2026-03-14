@@ -1,5 +1,5 @@
 :root{
-    --cream:#F5F0E8;
+    --cream:#FF9EC6;
     --dark: #1A1A2E;
     --teal:#0F7B6C;
     --gold: #C9A84C;
@@ -24,16 +24,16 @@ body{
     padding: 1.5rem 4rem;
     background: var(--dark);
     }
-    .logo{
+ .logo{
         font-family: 'Cormorant Garamond', serif;
         font-size: 1.8rem;
         color: var(--cream);
         letter-spacing: 1px;
     }
-    .logo span{
+ .logo span{
         color: var(--gold);
     }
-    .nav-links a{
+  .nav-links a{
         color: var(--cream);
         text-decoration: none;
         margin-left: 2rem;
@@ -41,21 +41,21 @@ body{
         opacity: 0.8;
         transition: opacity 0.2s;
     }
-    .nav-links a:hover{
+  .nav-links a:hover{
         opacity: 1;
         color: var(--gold);
     }
-    .hero{
+  .hero{
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 90vh;
         align-items: center;
     }
-    .hero-text{
+  .hero-text{
         padding: 5rem 4rem;
         animation: fadeUp 0.8s ease forwards;
     }
-    .hero-tag{
+ .hero-tag{
         display: inline-block;
         background: var(--light-teal);
         color: var(--teal);

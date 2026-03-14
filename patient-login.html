@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medibook-Patient-login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="left">
+            <div class="logo">Medi<span>Book</span></div>
+            <h2>Welcome Back</h2>
+            <p>Log in to view your appointments,track their status, and book new ones with AI powered specialist matching.</p>
+        </div>
+        <div class="right">
+            <h3>Patient Login</h3>
+            <p class="sub"> No account? <a href="patient-regiuster.html">Register Here</a>.</p>
+
+            <div class="form-group">
+                <label> Email Address</label>
+                <input type="email" id="email" placeholder="johndoe@example.com">
+                <div class="error-msg" id="emailErr">Enter Your Email</div>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter Your Password"/>
+                <div class="error-msg" id="passwordErr">Enter Your Password</div>
+            </div>
+            <button class="btn-primary" onclick="handleLogin()">Sign In</button>
+            <div class="alert alert-error" id="errAlert">Incorrect email or password. Try again</div>
+            <div class="alert alert-success" id="successAlert">Login successful! Redirecting...</div>
+        </div>
+    </div>
+    <script src="loginscript.js"></script>
+</body>
+</html>
