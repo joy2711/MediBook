@@ -17,7 +17,7 @@ function handleLogin(){
     const DEMO_EMAIL = 'patient@demo.com';
 
     if(email === stored.email || email === DEMO_EMAIL){
-        document.getElementById('success alert').style.display = 'block';
+        document.getElementById('successAlert').style.display = 'block';
 
         localStorage.setItem('session',JSON.stringify({email,role: 'patient'}));
         setTimeout(() => {window.location.href='patient-dashboard.html';},1200);
@@ -26,7 +26,7 @@ function handleLogin(){
         document.getElementById('errAlert').style.display= 'block';
     }
 }
-function showErr(ide, msg){
+function showErr(id, msg){
     document.getElementById(id).classList.add('error');
     const el=document.getElementById(id + 'Err');
     el.textContent = msg;
